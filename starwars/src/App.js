@@ -1,4 +1,9 @@
 import React from 'react';
+// import { default as Grid } from './components/PersonGrid';
+import { default as Grid } from './components/PersonGrid'; // 'import... as' I think was the issue with no rendering. 
+// I changed the import name for PersonCard in PersonGrid.js 
+// and after that things began to render
+// keeping line 2 commented though for reference
 import './App.css';
 
 const App = () => {
@@ -12,6 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Grid />
     </div>
   );
 }
