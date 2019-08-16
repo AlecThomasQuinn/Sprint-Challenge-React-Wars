@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import { default as Card} from './PersonCard.js';
+import PersonCard from './PersonCard.js';
 
 const PersonGrid = () => {
     const [personArr, setPersonArr] = useState([])
@@ -21,8 +21,13 @@ const PersonGrid = () => {
 
         <>
             {personArr.map(person => 
-                <Card name = {person.name}/>)}
-            <Card />
+                <PersonCard name = {person.name}
+                    birth_year = {person.birth_year}
+                    hair_color = {person.hair_color}
+                    gender = {person.gender}
+                    skin_color = {person.skin_color}
+                />)}
+            <PersonCard />
         </> 
     );
 
