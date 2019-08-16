@@ -11,7 +11,7 @@ const PersonCard = (props) => {
                     <span className='date'>Born: {props.birth_year}</span>
                 </Card.Meta>
                 <Card.Description>
-                    {props.name} is a {props.air_color}-haired {props.gender} with {props.skin_color} skin.
+                    {props.name} is a {props.hair_color}-haired {props.gender} with {props.skin_color} skin.
                 </Card.Description>
             </Card.Content>
 
